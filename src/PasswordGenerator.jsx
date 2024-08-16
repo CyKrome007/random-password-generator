@@ -97,6 +97,7 @@ const PasswordGenerator = () => {
                                         style={{
                                             borderColor: border_color,
                                             color: "white",
+                                            backgroundColor: "#3b3b3b",
                                         }}
                                         placeholder={'Password'}
                                         value={password}
@@ -141,14 +142,24 @@ const PasswordGenerator = () => {
                                         borderColor: border_color,
                                     }}
                                 >
-                                    <input type={'checkbox'} defaultChecked={numberAllowed}
+                                    <input type={'checkbox'}
+                                           style={{
+                                               backgroundColor: "#3b3b3b",
+                                               color: "white"
+                                           }}
+                                           defaultChecked={numberAllowed}
                                            id={'numberInput'}
                                            className={"w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"}
                                            onChange={() => setNumberAllowed((prev) => !prev)}
                                     />
                                     <label htmlFor={'numberInput'}>Number</label>
 
-                                    <input type={'checkbox'} defaultChecked={specialCharactersAllowed}
+                                    <input type={'checkbox'}
+                                           style={{
+                                               backgroundColor: "#3b3b3b",
+                                               color: "white"
+                                           }}
+                                           defaultChecked={specialCharactersAllowed}
                                            id={'specialCharacterInput'}
                                            className={"w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"}
                                            onChange={() => setSpecialCharactersAllowed(prev => !prev)}
