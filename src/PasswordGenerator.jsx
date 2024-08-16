@@ -90,10 +90,10 @@ const PasswordGenerator = () => {
                             <div className={'flex flex-col justify-center items-center border-b-2 p-2 px-10'}
                                  style={{borderColor: border_color}}>
                                 <div className={'mb-3 text-3xl font-bold'}>Password Generator</div>
-                                <div>
+                                <div className={'flex'}>
                                     <input
                                         type={'text'}
-                                        className={'px-3 py-2 rounded-l-full border-l-2 border-y-2'}
+                                        className={'px-3 py- rounded-l-full border-l-2 border-y-2'}
                                         style={{
                                             borderColor: border_color,
                                             color: "white",
